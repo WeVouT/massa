@@ -41,7 +41,7 @@ WORKDIR /massa/massa-client
 
 VOLUME /massa/massa-client/config
 
-ENTRYPOINT ["cd massa/massa-client/", "cargo run --release"]
+ENTRYPOINT ["cd /root/massa/massa-client/", "cargo run --release"]
 
 # Massa node
 FROM massa-base as massa-node
@@ -49,4 +49,4 @@ FROM massa-base as massa-node
 VOLUME /massa/massa-node/block_store
 VOLUME /massa/massa-node/config
 
-ENTRYPOINT ["cd massa/massa-node/", "nohup cargo run --release &"]
+ENTRYPOINT ["cd /root/massa/massa-node/", "nohup cargo run --release &"]
