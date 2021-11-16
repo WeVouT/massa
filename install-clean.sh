@@ -6,5 +6,3 @@ rustup toolchain install nightly
 rustup default nightly
 git clone --branch testnet https://gitlab.com/massalabs/massa.git
 
-cd /etc/systemd/system
-curl https://raw.githubusercontent.com/wevout/massa/main/massa.service
