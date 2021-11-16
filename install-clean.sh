@@ -1,9 +1,7 @@
-
-
-# RUSTING
+echo # RUSTING
 cd /root/massa/massa-client/
 cargo build --release
-
+echo #node
 cd /root/massa/massa-node/
 RUST_BACKTRACE=full cargo build --release 
 
