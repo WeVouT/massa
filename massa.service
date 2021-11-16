@@ -1,0 +1,17 @@
+[Unit]
+Description=Massa Node Service
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+Environment=RUST_BACKTRACE=full
+WorkingDirectory=/root/massa/massa-node
+ExecStart=/root/massa/target/release/massa-node
+Restart=always
+RestartSec=5
+SyslogIdentifier=Massa
+
+[Install]
+WantedBy=multi-user.target
