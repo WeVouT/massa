@@ -16,7 +16,7 @@ rustup toolchain install nightly
 rustup default nightly
 
 echo clone git repo
-git clone --branch testnet https://gitlab.com/massalabs/massa.git
+git clone --branch testnet https://github.com/massalabs/massa.git
 
 echo rust build client
 cd /root/massa/massa-client/
