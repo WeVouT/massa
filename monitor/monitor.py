@@ -4,10 +4,6 @@ import configparser
 import time 
 import json
 
-# constants
-IDEP_DECIMALS = 100000000
-TRANSACTION_WAIT_TIME = 10
-
 class MassaMonitor():
     def __init__( self, config_file='config.ini' ):
 
