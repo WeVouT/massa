@@ -1,0 +1,1 @@
+cd /root/massa/massa-client && source $HOME/.cargo/env && cargo run --release
