@@ -4,4 +4,4 @@ cat >config/config.toml <<EOL
         routable_ip = "${node_ip}"
 EOL
 
-source $HOME/.cargo/env && cargo run --release
+source $HOME/.cargo/env && cargo run --release -- -p 123
